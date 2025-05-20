@@ -1,56 +1,59 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-br">
 <head>
-<title>Page Title</title>
+    <meta charset="UTF-8">
+    <title>Apresentação - Miguel Müller</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-<body>  
+<body>
+    
 
-<h1>Miguel Gonçalves Müller</h1>
+    <button class="toggle-theme" onclick="toggleDarkMode()">🌗</button>
 
-<img src="img/IMG_2149.jpeg" alt="foto miguel" width="200"> 
+    <div class="container">
 
-<p>19 anos, Cursando BCC-FURB, estagiário da Philips na área de suporte. 
-    Moro em Blumenau desde meus 6 anos e tenho muito gosto pela área da tecnologia, querendo evoluir e 
-    ajudar o próximo diariamente.</p>
+        <h1>Miguel Gonçalves Müller</h1>
 
-<ul> 
-<li> 
-     ⚽ Jogar bola</li>
-<li> 👨‍👩‍👧‍👦Apreciar o tempo com meus familiares e amigos </li>
-<li> 📺Assistir jogos </li>
-<li> 🔴⚪Colorado</li>
+        <img src="img/IMG_2149.jpeg" alt="foto miguel">
 
-<h1>Minhas Redes Sociais😉</h1>
-<ul>
-    <li><a href="#">Instagram</a></li>
-    <li><a href="https://www.linkedin.com/in/miguel-goncalves-muller/">LinkedIn</a></li>
-    <li><a href="https://github.com/MiguelMuller-Philips/">GitHub</a></li>
-</ul>
+        <p>19 anos, Cursando BCC-FURB, estagiário da Philips na área de suporte.
+            Moro em Blumenau desde meus 6 anos e tenho muito gosto pela área da tecnologia, querendo evoluir e
+            ajudar o próximo diariamente.
+        </p>
 
-<h2>Fala Comigo!</h2>
-<form action="#" method="post">
-    <label for="nome">Nome:</label><br>
-    <input type="text" id="nome" name="nome"><br><br>
+        <ul>
+            <li>⚽ Jogar bola</li>
+            <li>👨‍👩‍👧‍👦 Apreciar o tempo com meus familiares e amigos</li>
+            <li>📺 Assistir jogos</li>
+            <li>🔴⚪ Colorado</li>
+        </ul>
 
-    <form action="#" method="post">
-        <label for="email">Email:</label><br>
-        <input type="text" id="email" name="email"><br><br>
+        <h1>Minhas Redes Sociais 😉</h1>
+        <ul>
+            <li><a href="#">Instagram</a></li>
+            <li><a href="https://www.linkedin.com/in/miguel-goncalves-muller/">LinkedIn</a></li>
+            <li><a href="https://github.com/MiguelMuller-Philips/">GitHub</a></li>
+        </ul>
 
-        <form action="#" method="post">
-            <label for="telefone">WhatsApp para contato:</label><br>
-            <input type="text" id="telefone" name="telefone"><br><br>
-            
+        <h2>Fala Comigo!</h2>
+        <form id="contatoForm">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome">
+            <span class="error" id="erroNome"></span>
+
+            <label for="email">Email:</label>
+            <input type="text" id="email" name="email">
+            <span class="error" id="erroEmail"></span>
+
+            <label for="mensagem">Mensagem:</label>
+            <textarea id="mensagem" name="mensagem"></textarea>
+            <span class="error" id="erroMensagem"></span>
+
             <button type="submit">Enviar</button>
+        </form>
 
+    </div>
 
-
-
-
-
-
-</ul>
-
-
+    <script src="script.js"></script>
 </body>
 </html>
-
